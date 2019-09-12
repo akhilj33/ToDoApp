@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "itemId": 1,
+      "title":"Fetch Milk",
+      "description":"Go to market and fetch 2L milk",
+      "dateTime":"12/04/2019 05:40",
+      "dateCreated": "11/04/2019",
+      "dateModified": "Null",
+      "tag": [
+        {
+          "id": 1,
+          "label": "Home",
+          "color": "Blue"
+        }
+             ],
+      "priority": [
+        {
+          "id": 2,
+          "label": "Medium",
+          "color": "Yellow"
+        }
+        ]  
+    },
+    
+    {
+      "itemId": 2,
+      "title":"Pay Electricity Bill",
+      "description":"Go to the shop and pay Rs 2250",
+      "dateTime":"30/04/2019 18:00",
+      "dateCreated": "20/04/2019",
+      "dateModified": "Null",
+      "tag": [
+        {
+          "id": 1,
+          "label": "Home",
+          "color": "Blue"
+        }
+             ],
+      "priority": [
+        {
+          "id": 1,
+          "label": "Low",
+          "color": "Green"
+        }
+        ]  
+    },
+    
+    {
+      "itemId": 3,
+      "title":"Talk to Sudhanshu Sir",
+      "description":"Ask Sudhanshu sir about the bug in the project",
+      "dateTime":"14/04/2019 11:00",
+      "dateCreated": "12/04/2019",
+      "dateModified": "13/04/2019",
+      "tag": [
+        {
+          "id": 2,
+          "label": "Work",
+          "color": "Red"
+        }
+             ],
+      "priority": [
+        {
+          "id": 2,
+          "label": "Medium",
+          "color": "Yellow"
+        }
+        ]  
+    },
+    
+    {
+      "itemId": 4,
+      "title":"Study about SQLite",
+      "description":"Learn about SQLite and implement it for android purpose",
+      "dateTime":"20/04/2019 13:00",
+      "dateCreated": "15/04/2019",
+      "dateModified": "Null",
+      "tag": [
+        {
+          "id": 3,
+          "label": "Study",
+          "color": "Green"
+        }
+             ],
+      "priority": [
+        {
+          "id": 2,
+          "label": "Medium",
+          "color": "Yellow"
+        }
+        ]  
+    },
+    
+    {
+      "itemId": 5,
+      "title":"Return Library Book",
+      "description":"Return book on Data Structures in library else fine will be charged",
+      "dateTime":"28/04/2019 10:00",
+      "dateCreated": "10/04/2019",
+      "dateModified": "Null",
+      "tag": [
+        {
+          "id": 3,
+          "label": "Study",
+          "color": "Green"
+        }
+             ],
+      "priority": [
+        {
+          "id": 3,
+          "label": "High",
+          "color": "Red"
+        }
+        ]  
+    },
+    
+    {
+      "itemId": 6,
+      "title":"Call Ankit",
+      "description":"Ask him about uncles health",
+      "dateTime":"16/04/2019 11:00",
+      "dateCreated": "15/04/2019",
+      "dateModified": "16/04/2019",
+      "tag": [
+        {
+          "id": 4,
+          "label": "Personal",
+          "color": "Yellow"
+        }
+             ],
+      "priority": [
+        {
+          "id": 2,
+          "label": "Medium",
+          "color": "Yellow"
+        }
+        ]  
+    },
+    
+    {
+      "itemId": 7,
+      "title":"Book Dr.Appointment",
+      "description":"Call eye care clinic and book an appointment",
+      "dateTime":"18/04/2019 16:45",
+      "dateCreated": "14/04/2019",
+      "dateModified": "16/04/2019",
+      "tag": [
+        {
+          "id": 4,
+          "label": "Personal",
+          "color": "Yellow"
+        }
+             ],
+      "priority": [
+        {
+          "id": 3,
+          "label": "High",
+          "color": "Red"
+        }
+        ]  
+    }
+  ]
+}

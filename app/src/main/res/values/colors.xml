@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#B2EBF2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorblue">#4527a0</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorlightblue">#538be2</color>
+    <color name="placeholer_bg">#dddddd</color>
+</resources>

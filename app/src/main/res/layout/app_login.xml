@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Login">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/colorblue"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/dancing_script"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"/>
+
+    <TextView
+        android:id="@+id/tv_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="@color/colorblue"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/dancing_script"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_welcome"
+        android:text="@string/personalize_your_todo_list"/>
+
+
+    <ImageView
+        android:id="@+id/logo_id"
+        android:layout_width="176dp"
+        android:layout_height="203dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik"
+        android:textStyle="bold"
+        android:text="To Do"
+        android:textSize="40sp"
+        android:textColor="#079fde"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
+

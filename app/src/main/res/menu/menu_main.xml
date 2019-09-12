@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mytodoapp.ui.activity.MainActivity">
+
+    <item
+        android:id="@+id/manage_task"
+        android:orderInCategory="101"
+        android:title="Manage Task"
+        app:showAsAction="never"/>
+</menu>

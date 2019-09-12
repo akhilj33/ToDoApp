@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/colorblack"
+        android:id="@+id/tv_title"
+        android:text="@string/add_tag"
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingBottom="4dp"
+        android:background="#33000000"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_tag_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:hint="@string/enter_tag_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_tag_colourpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/pick_colour"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_colour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_tag_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_alignParentEnd="true"
+            android:text="@string/add_tag"/>
+
+        <Button
+            android:id="@+id/btn_tag_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/btn_label_cancel"
+            android:layout_toLeftOf="@id/btn_tag_add"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

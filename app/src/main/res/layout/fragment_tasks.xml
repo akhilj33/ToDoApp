@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/pullToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_insetEdge="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.shimmer.ShimmerFrameLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmer_view_items">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+                    <include
+                        layout="@layout/placeholder_layout_items"/>
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context=".ui.activity.MainActivity"
+                tools:showIn="@layout/activity_main">
+
+                <ImageView
+                    android:id="@+id/placeholder_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:src="@drawable/placeholder_nodata"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
